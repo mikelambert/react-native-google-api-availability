@@ -2,18 +2,17 @@ package org.jall.reactnative.firebase;
 
 import android.app.Activity;
 
-import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.ReadableMap;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
 
 import javax.annotation.Nullable;
 
-public class GoogleApiAvailability extends ReactContextBaseJavaModule {
-    public GoogleApiAvailability(ReactApplicationContext reactContext) {
+public class GoogleApiAvailabilityModule extends ReactContextBaseJavaModule {
+    public GoogleApiAvailabilityModule(ReactApplicationContext reactContext) {
         super(reactContext);
     }
 
@@ -25,7 +24,7 @@ public class GoogleApiAvailability extends ReactContextBaseJavaModule {
     @ReactMethod
     public void isGooglePlayServicesAvailable() {
         GoogleApiAvailability apiAvailability = GoogleApiAvailability.getInstance();
-        int resultCode = apiAvailability.isGooglePlayServicesAvailable(this);
-        return (resultCode == ConnectionResult.SUCCESS);
+        int resultCode = apiAvailability.isGooglePlayServicesAvailable(getReactApplicationContext());
+        promise.resolve(resultCode == ConnectionResult.SUCCESS);
     }
 }

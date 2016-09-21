@@ -1,19 +1,21 @@
 {
   "name": "react-native-google-api-availability",
-  "version": "0.1.4",
+  "version": "0.0.1",
   "description": "React Native wrapper for GoogleApiavailability",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
+    "google-play",
+    "google-api-availability",
     "react",
     "react-native",
     "react-component"
   ],
   "author": "Mike Lambert <mlambert@gmail.com>",
-  "repository": "https://github.com/mikelambert/react-native-firebase3",
-  "bugs": "https://github.com/mikelambert/react-native-firebase3/issues",
+  "repository": "https://github.com/mikelambert/react-native-google-api-availability",
+  "bugs": "https://github.com/mikelambert/react-native-google-api-availability/issues",
   "peerDependencies": {
     "react-native": ">=0.13"
   }

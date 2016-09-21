@@ -17,7 +17,7 @@ public class GoogleApiAvailabilityPackage implements ReactPackage {
     public List<NativeModule> createNativeModules(
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new GoogleApiAvailability(reactContext));
+        modules.add(new GoogleApiAvailabilityModule(reactContext));
         return modules;
     }
 
