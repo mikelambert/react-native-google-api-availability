@@ -1,12 +1,12 @@
-package org.jall.reactnative.firebase;
-
-import android.app.Activity;
+package org.jall.reactnative.googleapiavailability;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
+
+import org.jall.reactnative.googleapiavailability.GoogleApiAvailabilityModule;
 
 import java.util.ArrayList;
 import java.util.List;
