@@ -1,6 +1,6 @@
 {
   "name": "react-native-google-api-availability",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React Native wrapper for GoogleApiavailability",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
